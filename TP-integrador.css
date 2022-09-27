@@ -46,7 +46,7 @@ body {
    background-blend-mode: darken;
    filter: brightness(50%); */
    overflow: hidden;
-    background: linear-gradient(rgb(0,0,0,0.8), rgba(44, 44, 44, 0.8)), url("https://github.com/PamelaMorsentti/PamelaMorsentti/blob/main/imagenes_integrador_front/ba1.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgb(0,0,0,0.8), rgba(44, 44, 44, 0.8)), url(".../imagenes_integrador_front/ba1.jpg");  /* Chrome 10-25, Safari 5.1-6 */
     background-size: cover;
     background-repeat: no-repeat;
     width: fit-content;
