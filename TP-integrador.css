@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: light;
+}
+
+.navbavar {
+    position: sticky top;
+    top: 0;
+    color: green
+}
+
+.nav-link > input:hover {
+    text-decoration-color: green;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/*#fondo:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+} */
+
+.fondo {
+   /*background-image: url("../imagenes_integrador_front/ba1.jpg") ;
+   height: 100%;
+   background-size: cover;
+   background-blend-mode: darken;
+   filter: brightness(50%); */
+   overflow: hidden;
+    background: linear-gradient(rgb(0,0,0,0.8), rgba(44, 44, 44, 0.8)), url("../imagenes_integrador_front/ba1.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+
+
+.fondo2 {
+    background-image: url("../imagenes_integrador_front/honolulu.jpg");
+}
+
+.oradores {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    animation: flipInY;
+    animation-duration: 2s;
+}
+
+
+.card {
+    margin: 1rem; 
+
+}
+
+.orador > img {
+    width: 100%;
+}
+
+.botones > input {
+    border:0;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.2rem, 0.4rem, 0.2rem, 0.4rem;
+    margin-top: 1rem;
+}
+
+.botones-Ada > input {
+    border:0;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.2rem, 0.4rem, 0.2rem, 0.4rem;
+    margin-top: 1rem;
+}
+
+.botones > input:hover {
+    animation: rubberBand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    --webkit-animation-iteration-count: infinite;
+    --animation-repeat: 2s;    
+}
+
+.botones-Ada > input:hover {
+    animation: rubberBand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    --webkit-animation-iteration-count: infinite;
+    --animation-repeat: 2s;    
+}
+
+.btnAmarillo {
+    background-color: rgb(255, 201, 0);
+    margin-right: 0.2rem;
+}
+
+.btnCeleste {
+    background-color: rgb(23, 162, 185);
+    color: white;
+}
+
+.btnGris {
+    background-color: rgb(105, 116, 122);
+    color: white;
+    margin-right: 0.2rem;
+}
+
+.btnRojo {
+    background-color: rgb(209, 43, 43);
+    color: white;
+}
+
+.btnVerde {
+    background-color: rgb(43, 170, 67);
+    color: white;
+    padding: 1rem, 0.5rem;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border-color: white;
+    padding: 1rem, 0.5rem;
+
+}
+
+.boton > input:hover {
+    animation: rubberBand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    --webkit-animation-iteration-count: infinite;
+    --animation-repeat: 2s;
+    border-color: white;
+    border-width: 1rem; 
+}
+
+
+.titulo {
+    font-size: 1.5rem;
+    font-weight: bold ;
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+
+}
+
+.textoOrador{
+    margin: 1.2rem;
+}
+
+
+@media only screen and (max-width:700px) {
+    .oradores {
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+.card-img {
+    margin: 0rem;
+    align-self: center;
+    size-adjust: auto;
+    
+
+}
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form {
+    width: 100px;
+}
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+.custom-element {
+    color: tint-color(primary, 10%);
+}
+
+.custom-element-2 {
+    color: shade-color(danger, 30%);
+}
